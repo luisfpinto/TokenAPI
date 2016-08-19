@@ -47,29 +47,31 @@ sudo mongod
 
 Send a request with GET to create try the express routes. You can use Postman to do this. 
 
-http://localhost:8080
+> http://localhost:8080
 
 You will recieve 'Hello World'
 
 Now create a user sending a request to
 
-http://localhost:8080/setup
+> http://localhost:8080/setup
 
 A user will be created on the database 
 
 > Name: Luis
+
 > Password: password 
 
 Now you need to send a post to authenticate the user and get a Token. Send a request with POST  and body with name and password to 
 
-http://localhost:8080/api/authenticate
+> http://localhost:8080/api/authenticate
 
 You will get a response with a Token. Save that token. We will need it.
 
 Finally you can access to the following routes:
 
-http://localhost:8080/api
-http://localhost:8080/users
+> http://localhost:8080/api
+
+> http://localhost:8080/users
 
 **Only** if you send the token on the header of your post, otherwise you won't be able to get the information and you will recieve an error like "No token provided"
 
