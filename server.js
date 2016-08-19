@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(morgan('dev'))
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.status(200).send('Hello World')
 })
 
 // Create User on the database
@@ -31,7 +31,7 @@ app.get('/setup', function (req, res) {
   userName.save(function (err) {
     if (err) throw err
     console.log('User saved')
-    res.status(200)
+    res.status(200).send()
   })
 })
 
@@ -43,3 +43,4 @@ app.listen(port, function () {
   console.log('Server is running on localhost:' + port)
 })
 
+module.exports = app

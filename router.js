@@ -33,7 +33,7 @@ router.use(function (req, res, next) {
       next()
     })
   } else {
-    return res.status(403).send({sucess: false, message: 'No token provided.'})
+    return res.status(403).send({sucess: false, message: 'No token provided'})
   }
 })
 

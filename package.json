@@ -15,5 +15,9 @@
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.5.9",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
   }
 }
